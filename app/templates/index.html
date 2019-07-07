@@ -1,0 +1,62 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scrypt/scrypt.js"></script>
+    <title>index</title>
+</head>
+<body>
+	<header class="header">
+        <div id="nav-secundaria">
+            <ul>
+                <li>
+                    <div id = "btn-tamanho">
+                        <a href="#"><button id="btn-login">Entrar</button></a>
+                    </div>
+                </li>
+                <p>ou</p>
+                <li>
+                    <div id = "btn-tamanho">
+                        <a href="#"><button id="btn-login">Cadastre-se</button></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-principal" class="menu-fixo">   
+            <nav class="nav-bar">
+                <ul>
+                    <!-- <div id="logo"><p>logo aqui!</p></div> -->
+                    <li>
+                        <div id = "tamanho"><a href="#index.html">Inicio</a></div>
+                    </li>
+                    <li>
+                        <div id = "tamanho"><a href="#">Como funciona</a></div>
+                    </li>
+                    <li>
+                        <div id = "tamanho" class="sub-menu"><a href="#Dics">Dicas</a>
+                            <ul>
+                                <li><a href="#Seguranca">Segurança</a></li>
+                                <li><a href="#Seguranca">Saúde</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div id = "tamanho"><a href="#">Sobre nós</a></div>
+                    </li>
+                    <li>
+                        <div id = "tamanho"><a href="#">Contato</a></div>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+            <div id="banner">
+                <h1>banner aqui</h1>
+            </div>
+	</header>	
+</body>
+</html>
