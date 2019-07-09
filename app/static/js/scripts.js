@@ -1,9 +1,12 @@
 const target = document.querySelectorAll('#nav-principal');
+const target2 = document.querySelectorAll('[data-anime]');
+
 const fixar = 'menu-fixo';
+const animationClass = 'animate';
 
 function menuFixo(){
     const windowTop = window.pageYOffset;
-    target.forEach(function(element){
+    target.forEach(function(element) {
         if((windowTop)> (element.offsetTop)){
             element.classList.add(fixar);
         }
@@ -12,10 +15,28 @@ function menuFixo(){
         }
     })
 }
-menuFixo();
-if(target.length){
-    window.addEventListener('scroll', function(){
-        menuFixo();
+window.addEventListener('scroll', function(){
+    menuFixo();
+})
+
+function animeScroll(){
+    const windowTop = window.pageYOffset + ((window.innerHeight*3)/4);
+    target2.forEach(function(element){
+        if((windowTop)> (element.offsetTop)){
+            element.classList.add(animationClass);
+        }
+        else{
+            element.classList.remove(animationClass);
+        }
     })
 }
+animeScroll();
+if(target2.length){
+    window.addEventListener('scroll', function(){
+        animeScroll();
+    })
+}
+
+
+
 
