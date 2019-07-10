@@ -25,9 +25,9 @@ function animeScroll(){
         if((windowTop)> (element.offsetTop)){
             element.classList.add(animationClass);
         }
-        else{
-            element.classList.remove(animationClass);
-        }
+        // else{
+        //     element.classList.remove(animationClass);
+        // }
     })
 }
 animeScroll();
@@ -36,6 +36,13 @@ if(target2.length){
         animeScroll();
     })
 }
+else if(target2.length){
+    window.addEventListener('click', function(){
+        animeScroll();
+    })
+}
+
+
 
 
 
