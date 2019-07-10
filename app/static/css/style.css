@@ -139,44 +139,60 @@ div{
 /* como funciona section */
 #funcionamento{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1%;
+    background-color: rgba(177, 177, 177, 0.295);
+}
+#funcionamento #titulo{	
+    font-size: 24px;
+    text-align: justify;
+    width: 40%;
+    height:70%;
+}
+#funcionamento #titulo-img img{
+    width: 800px;
+    height: 100%;
+}
+#funcionamento2 #icones-funcionamento{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+}
+#funcionamento2 #icones-funcionamento #icone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#icones-funcionamento #icone img{	
+    width: 130px;	
+    height: 130px;
+}	
+#funcionamento2 #icones-funcionamento #icone p{
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 5% 0px 5%;
+}
+#funcionamento2 #icones-funcionamento #icone h4{
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 5% 0px 5%;
+    text-decoration-color: aquamarine;
+}
+
+#dicas-seguranca{
+    display: flex;
     align-items: flex-start;
     justify-content: right;
     flex-direction: column;
     align-items: center;
-    padding-top: 1%;
-    padding-left: 4%;	
-}
-#funcionamento #titulo{	
-    font-size: 24px;
-    margin: 0px 20px 20px 20px;;
-    text-align: justify;
-}
-#funcionamento #icones-funcionamento{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#funcionamento #icones-funcionamento #icone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#icones-funcionamento #icone img{	
-    width: 120px;	
-    height: 120px;
-}	
-#funcionamento #icones-funcionamento #icone p{
-    font-size: 14px;
-    text-align: center;
-    padding: 0px 10px 0px 10px;
-}
-#funcionamento #icones-funcionamento #icone h4{
-    font-size: 18px;
-    text-align: center;
-    padding: 0px 10px 0px 10px;
-    text-decoration-color: aquamarine;
 }
 
 /* animação - funcionamento */
