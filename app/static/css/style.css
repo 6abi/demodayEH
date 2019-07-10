@@ -5,15 +5,16 @@ body{
     display: grid;
 }
 .header{
-    width: 100%;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    background: url('/static/images/b1.jpg') no-repeat fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    }
+    justify-content: space-between;
+    background-color:rgba(0, 0, 0, 0.0);
+    background: url('/static/images/img_bg_1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 485px;
+}
+section,
 div{
     display: block;
 }
@@ -22,9 +23,10 @@ div{
 #nav-secundaria{
     display: flex;
     align-items: flex-end;
-    justify-content: right;
+    justify-content: flex-end;
     flex-direction: row;
     align-items: center;
+    margin: 0px 40px;
 }
 #nav-secundaria ul{
     display: flex;
@@ -34,18 +36,29 @@ div{
 }
 #nav-secundaria li{
     display: inline-block;
-    padding: 0px 20px;
 }
 #btn-login{
     padding: 9px 25px;
     border: none;
-    border-radius: 50px;
+    border-radius: 40px;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     transition: all 0.3s ease 0s;
+    padding: 20px 20px;
+    font-size: 14px;
+    color: #52d3aa;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 #btn-login:hover{
-    background-color: rgba(0,136,169,0.5);
+    background-color: #52d3aa;
+    color: white;
+    box-shadow: 2px 6px 4px black;
+}
+#nav-secundaria p{
+    padding: 0px 10px;
+    color: white;
+    font-size: 18px;
 }
 
 /* barra de navegação */
@@ -53,11 +66,14 @@ div{
     width: 100%;
     top: 0;
     min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .header .menu-fixo{
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: black;
 }
 .nav-bar{
     display: block;
@@ -69,7 +85,6 @@ div{
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    margin: 0;
 }
 .header .nav-bar li{
     display: list-item;
@@ -79,10 +94,11 @@ div{
     align-items: center;
     justify-content: center;
     width: 200px;
+    min-height: 70px;
 }
 .nav-bar #tamanho li{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     list-style: none;
 }
 .nav-bar li #tamanho  a{
@@ -93,9 +109,10 @@ div{
     font-weight: bold;
 }
 .nav-bar li #tamanho a:hover{
-    color: black;
+    color: #52d3aa;
     cursor: pointer;
 }
+
 /* submenu dicas */
 .sub-menu  ul{
     display: none;
