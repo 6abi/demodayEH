@@ -5,7 +5,6 @@ body{
     display: grid;
 }
 .header{
-
     display: flex;
     flex-direction: column;
     background: url('/static/images/img_bg_1.jpg') no-repeat;
@@ -16,6 +15,18 @@ body{
 section,
 div{
     display: block;
+}
+
+#apresentarInicio{
+    margin: 0;
+    display: flex;
+    color: rgb(24, 95, 161);
+    font-family: 'Crete Round', serif;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: 250px;
 }
 
 /* botoes de login e cadastro */
@@ -134,6 +145,33 @@ div{
     border-radius: 10px;
 }
 
+/* animação titulo inicial*/
+#tituloInicial{
+    font-size: 50pt;
+    color: white;
+    letter-spacing: -4px;
+    margin: 5px;
+    animation: alternate;
+}
+
+span:before{
+    content: 'Bike?';
+    animation: animate infinite 10s;
+    animation-delay: 2s;
+    align-items: center;
+    align-items: flex-start;
+}
+
+@keyframes animate{
+    20%{content: 'Bike?'}
+    30%{content: 'Bici?'}
+    40%{content: '比西切塔?'}
+    50%{content: 'Fahrrad?'}
+    60%{content: 'Sykkel?'}
+    75%{content: 'Велосипед?'}
+    100%{content: 'Bisiklet?'}
+}
+
 /* como funciona section */
 #funcionamento{
     display: flex;
@@ -203,6 +241,7 @@ div{
     height: 100%;
     text-align: center;
     color: white;
+    font-family: 'Baloo Bhai', cursive;
 }
 #dicas-seguranca #dicas{
     display: flex;
@@ -221,6 +260,18 @@ div{
     padding: 5% 5% 5% 5%;
     color: white;
 }
+
+/* dicas de saúde */
+#dicas-saude{
+    font-family: 'Baloo Bhai', cursive;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+
 footer{		
     display: flex;	
     flex-direction: column;	
