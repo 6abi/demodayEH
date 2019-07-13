@@ -14,21 +14,21 @@
             <td><input type="text" name="nome" maxlength="255" required id="id_nome"></td>
             {% csrf_token %}
         </tr>
-        <tr>
+        <tr data-anime="left">
             <th><label for="id_assunto">Assunto:</label></th>
             <td><input type="text" name="assunto" maxlength="255" required id="id_assunto"></td>
             {% csrf_token %}
         </tr>
-        <tr>
+        <tr data-anime="left">
             <th><label for="id_email">Email:</label></th>
             <td><input type="email" name="email" maxlength="254" required id="id_email"></td>
         </tr>
-        <tr>
+        <tr data-anime="left">
             <th><label for="id_telefone">Telefone:</label></th>
             <td><input type="number" name="telefone" maxlength="14" required id="id_telefone"></td>
             {% csrf_token %}
         </tr>
-        <tr>
+        <tr data-anime="left">
             <th><label for="id_conteudo">Conteudo:</label></th>
             <td><textarea name="conteudo" cols="40" rows="10" required id="id_conteudo">
                 </textarea></td>

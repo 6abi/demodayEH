@@ -1,8 +1,8 @@
 const target = document.querySelectorAll('#nav-principal');
 const target2 = document.querySelectorAll('[data-anime]');
-
 const fixar = 'menu-fixo';
 const animationClass = 'animate';
+
 
 function menuFixo(){
     const windowTop = window.pageYOffset;
@@ -36,7 +36,6 @@ if(target2.length){
         animeScroll();
     })
 }
-
 
 
 
