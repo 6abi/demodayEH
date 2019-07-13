@@ -1,0 +1,120 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+section {
+    height: 95vh;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('/static/images/contato/banner_contato.jpg');
+    background-size: cover;
+}
+
+section article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#filtro { 
+    width:100%;
+    height:100%;
+    background: linear-gradient(to right, #52d3aa 0%, #3f95ea 46%, #52d3aa 100%);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 50%;
+    border: none;
+}
+form div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: black; 
+}
+
+form div:nth-child(5) a{
+    font-size: 12pt;
+}
+
+form label{
+    padding: 8px 0;
+    color: white;
+    width: 50%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+form input{
+    width: 50%;
+    height: 30px;
+    font-size: 14pt;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(255, 255, 255, .95);
+    padding-left: 2%;
+}
+/* 
+form input:valid ~ label{
+    color: #3f95ea;
+} */
+
+form img{
+    width: 180px;
+}
+
+form ul{
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+form a{
+    text-decoration: none;
+    color:white;
+    width: 130px;
+    text-align: center;
+}
+
+form button{
+    margin-top: 1%;
+    width: 130px;
+    height: 35px;
+    background-color: #3f95ea;      
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+form button:hover { 
+    cursor: pointer;
+    background-color: #52d3aa;
+    color: white;
+    box-shadow: 2px 6px 4px black;
+}
+textarea {
+    text-rendering: auto;
+    display: inline-block;
+    flex-direction: column;
+    text-align: start;
+    background-color: rgba(255, 255, 255, .95);
+    resize: auto;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 5%;
+    font-size: 14pt;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 5%;
+}
+
