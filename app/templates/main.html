@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<!-- barra de navegação contato e cadastro -->
+
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+            <ul id="btn-main">
+                <li>
+                    <a href="#" id="entrar"><button id="btn-login">Entrar</button></a>
+                </li>
+                <li>
+                    <div><p>ou</p></div>
+                </li>
+                <li>
+                    <a href="#" id="cadastre-se"><button id="btn-login">Cadastre-se</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div id="links-footer">
+            <div id="logo-footer">
+                <img id="gobike" src="/static/images/gobike2.png" alt="Gobike">
+            </div>
+            <div id="redesSocias">
+                <p id="copyright">© 2019 Gobike Ltda | Todos os Direitos Reservados</p>
+                <div id="icons">
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/facebook.png" alt="face"></a>
+                    </div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/twitter.png" alt="twitter"></a>
+                    </div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/instagram.png"
+                                alt="instagram"></a></div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/youtube.png" alt="youtube"></a>
+                    </div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/linkedin.png"
+                                alt="linkedin"></a></div>
+                </div>
+            </div>
+            <div id="links">
+                <a href="/notFound">Termos e Privacidade</a>
+                <a href="/contato">Contato</a>
+                <a href="#sobrenos">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
