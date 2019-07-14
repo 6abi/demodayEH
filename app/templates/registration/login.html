@@ -17,10 +17,10 @@
         <label for="password">Senha:</label>
         <input type="password" name="password" required id="password">
         <button type="submit">{% csrf_token %}Entrar</button>
+        <div>
+            <a href="/">Voltar</a>
+            <a href="/../accounts/register">Cadastre-se</a>
+        </div>
     </form>
 </section>
-
-<h1>login</h1>
-<p>Nome digitado: {{username}}</p>
-<p>senha: {{passowrd}}</p>
 {% endblock %}
