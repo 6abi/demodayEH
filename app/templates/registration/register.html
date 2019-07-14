@@ -5,16 +5,18 @@
 <link rel="stylesheet" href="{% static 'css/register.css' %}">
 
 <section>
-    <div>
-        <form method="post">
+    <div id="form">
+        <form method="POST">
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ next }}">
             <img src="/static/images/gobike.png" alt="">
             {{ form }}
 
             <button type="submit">{% csrf_token %}Cadastrar</button>
+            <div id="login">
+                <p>Já tem uma conta?</p><a href="/../accounts/login">Entrar</a>
+            </div>
         </form>
     </div>
-
 </section>
 {% endblock %}
