@@ -156,7 +156,7 @@ div{
 
 span:before{
     content: 'Bike?';
-    animation: animate infinite 10s;
+    animation: animate infinite 5s;
     animation-delay: 2s;
     align-items: center;
     align-items: flex-start;
@@ -205,8 +205,8 @@ span:before{
     width: 100%;
 }
 #icones-funcionamento #icone img{	
-    width: 130px;	
-    height: 130px;
+    width: 150px;	
+    height: 150px;
 }	
 #funcionamento2 #icones-funcionamento #icone p{
     font-size: 14px;
@@ -247,10 +247,10 @@ span:before{
 }
 #dicas-seguranca #dicas #seguranca h4{
     color: white;
-    font-size: 28px;
+    font-size: 26px;
 }
 #dicas-seguranca #dicas #seguranca p{
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     padding: 5% 5% 5% 5%;
     color: white;
@@ -294,6 +294,7 @@ span:before{
     padding: 5% 5% 5% 5%;
     align-items: center;
 }
+/* fim da pagina dicas de saude*/
 
 /* pagina Quem somos */
 .descricao{
@@ -363,7 +364,7 @@ span:before{
     flex-direction: column;
     display: flex;
 }
-
+/* fim da pagina Quem somos*/
 footer{		
     display: flex;	
     flex-direction: column;	
