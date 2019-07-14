@@ -274,7 +274,7 @@ span:before{
     text-align: center;
 }
 
-#dicas-saude #saude {
+#dicas-saude #saude{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -293,7 +293,6 @@ span:before{
     text-align: center;
     padding: 5% 5% 5% 5%;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 footer{		
