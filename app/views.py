@@ -1,6 +1,11 @@
-from django.shortcuts import render
-# from django.views.decorators.csrf import csrf_protect
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_protect
 from django import forms
+from django.contrib import messages
+import datetime
 
 # Create your views here.
 def mostrar_index(request):

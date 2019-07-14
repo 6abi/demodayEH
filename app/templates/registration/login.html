@@ -3,21 +3,24 @@
 {% block title %}Entrar no Gobike{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
 <section>
-    <form method='POST'>
+    <form method="post">
         {% csrf_token %}
-        <input type="hidden" name="next"
-            value="{{ next }}">
-        <img src="/static/images/gobike.png" alt="GOBIKE">
-        <tr>
-            <th><label for="id_user">Usuário:</label></th>
-            <td><input type="text" name="user" maxlength="255" required id="id_user"></td>
-        </tr>
-        <tr>
-            <th><label for="id_password">Senha:</label></th>
-            <td><input type="password" name="password" maxlength="255" required id="id_password"></td>
-        </tr>
-        <button type='submit'>{% csrf_token %}Entrar</button>
+        <input type="hidden" name="csrfmiddlewaretoken"
+            value="GcZnJM2Rn8Btwf17cx1mRMtH40x9CRvvX4AokraKIpAOPVvwotLS4gvf9FUrNYzv">
+
+        <img src="/static/images/gobike.png" alt="">
+        <label for="username">Usuário:</label>
+        <input type="username" name="username" autofocus required id="username">
+
+        <label for="password">Senha:</label>
+        <input type="password" name="password" required id="password">
+        <button type="submit">{% csrf_token %}Entrar</button>
     </form>
 </section>
+
+<h1>login</h1>
+<p>Nome digitado: {{username}}</p>
+<p>senha: {{passowrd}}</p>
 {% endblock %}
