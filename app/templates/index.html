@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +9,69 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="{% static 'js/scripts.js' %}" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
     <title>Gobike</title>
 </head>
+
 <body>
-	<header class="header">
+    <header class="header">
         <div id="nav-secundaria">
             <ul>
                 <li>
-                    <div id = "btn-tamanho">
-                        <a href="#" id="entrar"><button id="btn-login">Entrar</button></a>
+                    <div id="btn-tamanho">
+
+                        <a href="accounts/login" id="entrar"><button id="btn-login">Entrar</button></a>
                     </div>
                 </li>
-                <p>  ou </p>
+                <p> ou </p>
                 <li>
-                    <div id = "btn-tamanho">
-                        <a href="#" id="cadastrese"><button id="btn-login">Cadastre-se</button></a>
+                    <div id="btn-tamanho">
+                        <a href="accounts/register" id="cadastrese"><button id="btn-login">Cadastre-se</button></a>
                     </div>
                 </li>
             </ul>
         </div>
-        <div id="nav-principal">   
+        <div id="nav-principal">
             <nav class="nav-bar">
                 <ul>
                     <div id="logo"><a href="#index.html"><img src="" alt="Gobike"></a></div>
                     <li>
-                        <div id = "tamanho"><a href="#index.html" id="index">Inicio</a></div>
+                        <div id="tamanho"><a href="#index.html" id="index">Inicio</a></div>
                     </li>
                     <li>
-                        <div id = "tamanho"><a href="#funcionamento" id="como-funciona">Como funciona</a></div>
+                        <div id="tamanho"><a href="#funcionamento" id="como-funciona">Como funciona</a></div>
                     </li>
                     <li>
-                        <div id = "tamanho"><a href="#dicas-seguranca" id="seguranca">Dicas de Segurança</a></div>
+                        <div id="tamanho"><a href="#dicas-seguranca" id="seguranca">Dicas de Segurança</a></div>
                     </li>
                     <li>
-                        <div id = "tamanho"><a href="#" id="saude">Dicas de Saúde</a></div>
+                        <div id="tamanho"><a href="#" id="saude">Dicas de Saúde</a></div>
                     </li>
                     <li>
-                        <div id = "tamanho"><a href="#" id="sobre">Sobre nós</a></div>
+                        <div id="tamanho"><a href="#" id="sobre">Sobre nós</a></div>
                     </li>
                     <li>
-                        <div id = "tamanho"><a href="/contato" id="contato">Contato</a></div>
+                        <div id="tamanho"><a href="/contato" id="contato">Contato</a></div>
                     </li>
                 </ul>
             </nav>
-        </div> 
+        </div>
         <div id="apresentarInicio">
-        <h1>E aí, vamos de <span></span></h1>
+            <h1>E aí, vamos de <span></span></h1>
         </div>
     </header>
     <section id="funcionamento">
         <div id="titulo">
             <h1 data-anime="right">Como funciona?</h1>
             <p data-anime="left">
-                A Gobike funciona como uma plataforma  de compartilhamento para ciclistas.
+                A Gobike funciona como uma plataforma de compartilhamento para ciclistas.
                 <p data-anime="left">Ideal para quem quer fugir do transito de São Paulo,
-                se manter em forma, curtir um passeio de bike ou praticar uma atividade fisica ao ar livre e registrar esse rolê! </p>  
+                    se manter em forma, curtir um passeio de bike ou praticar uma atividade fisica ao ar livre e
+                    registrar esse rolê! </p>
             </p>
         </div>
         <div id="titulo-img">
@@ -75,8 +79,8 @@
         </div>
     </section>
     <article id="funcionamento2">
-        <div id ='icones-funcionamento' data-anime="left">
-            <div id="icone" >
+        <div id='icones-funcionamento' data-anime="left">
+            <div id="icone">
                 <img src="/static/images/funcionamento/cadastro.png" alt="Cadastre-se">
                 <h4>Cadastre-se</h4>
                 <p>Preencha as informações do formulario, é rápido e essencial para uso da aplicação</p>
@@ -100,10 +104,10 @@
                 <img src="/static/images/funcionamento/compartilhe.png" alt="Cadastre-se">
                 <h4>compartilhe com os amigos!</h4>
                 <p>Depois que já deu a pedalada do dia, que tal compartilhar seu trajeto com a galera?</p>
-            </div> 
-        </div>  
+            </div>
+        </div>
     </article>
-<!-- pagina dicas de segurança -->
+    <!-- pagina dicas de segurança -->
     <article id="dicas-seguranca">
         <!-- card de cima -->
         <h1 data-anime="right">Dicas de Segurança para aproveitar o passeio!</h1>
@@ -111,14 +115,15 @@
             <div id="seguranca" data-anime="right">
                 <h4>O ESPAÇO</h4>
                 <img src="/static/images/dicas/dica_figura_1.png" alt="dicas-segurança">
-                <p>Ciclistas devem circular ocupando a faixa da direita e na mão dos carros. 
-                    Já os motoristas e motociclistas devem manter deles uma distância de 1,5 metros ao ultrapassar 
+                <p>Ciclistas devem circular ocupando a faixa da direita e na mão dos carros.
+                    Já os motoristas e motociclistas devem manter deles uma distância de 1,5 metros ao ultrapassar
                 </p>
             </div>
             <div id="seguranca" data-anime="right">
                 <h4>ACESSÓRIOS NECESSÁRIOS</h4>
                 <img src="/static/images/dicas/dica_figura_2.png" alt="dicas-segurança">
-                <p>Use capacete e luvas.Tenha uma lanterna de luz branca na frente da bicicleta e uma de luz vermelha na parte traseira,
+                <p>Use capacete e luvas.Tenha uma lanterna de luz branca na frente da bicicleta e uma de luz vermelha na
+                    parte traseira,
                     assim os motoristas poderão enxergar você.
                 </p>
             </div>
@@ -128,51 +133,55 @@
                 <p>Bicicleta é um veículo e, portanto, deve ocupar as vias. A calçada é de uso exclusivo de pedestres,
                     exceto quando na existência de calçada compartilhada.
                 </p>
-            </div>  
+            </div>
         </div>
         <!-- card de baixo -->
         <div id="dicas">
-             <div id="seguranca" data-anime="left">
+            <div id="seguranca" data-anime="left">
                 <h4>ATENÇÃO NOS CRUZAMENTOS</h4>
                 <img src="/static/images/dicas/dica_figura_4.png" alt="dicas-segurança">
-                <p>Não passe ou atravesse no sinal vermelho. 
-                    E mesmo que a via seja preferencial ou o sinal esteja aberto para você, 
-                    mantenha-se sempre atento, pois pode haver alguma emergência ou imprudência no trânsito. 
+                <p>Não passe ou atravesse no sinal vermelho.
+                    E mesmo que a via seja preferencial ou o sinal esteja aberto para você,
+                    mantenha-se sempre atento, pois pode haver alguma emergência ou imprudência no trânsito.
                 </p>
             </div>
             <div id="seguranca" data-anime="left">
                 <h4>MANTENHA AS CRIANÇAS À SUA FRENTE</h4>
                 <img src="/static/images/dicas/dica_figura_5.png" alt="dicas-segurança">
-                <p>Além de resguardá-las, você evita que elas tentem acompanhar o ritmo da sua pedalada e assim pedalam com 
+                <p>Além de resguardá-las, você evita que elas tentem acompanhar o ritmo da sua pedalada e assim pedalam
+                    com
                     mais segurança e tranquilidade. Mantenha, também, a criança ao lado da guia.
                 </p>
             </div>
             <div id="seguranca" data-anime="right">
                 <h4>OLHA A LADEIRA!</h4>
                 <img src="/static/images/dicas/dica_figura_6.png" alt="dicas-segurança">
-                <p>Cuidado com a descida. Pode parecer muito mais fácil e gostoso soltar a bike na descida e sentir o vento 
+                <p>Cuidado com a descida. Pode parecer muito mais fácil e gostoso soltar a bike na descida e sentir o
+                    vento
                     batendo no rosto, mas também pode ser perigoso.
                 </p>
-            </div>  
-        </div>        
+            </div>
+        </div>
         </div>
     </article>
-<!--pagina dicas de saúde-->
+    <!--pagina dicas de saúde-->
     <article id="dicas-saude">
         <!--card de cima-->
         <h1 data-anime="left">Dicas de saúde!</h1>
         <div id="dicas">
             <div id="saude" data-anime="right">
                 <p>É um esporte aeróbico que ajuda a queimar calorias.</p>
-            <div id="saude">
-                <p>Ajuda na prevenção de doenças crônicas como obesidade, colesterol alto, diabetes e doenças cardíacas.</p>
-            </div>
-            <div id="saude" data-anime="right">
-                <p>Estimula o sistema imunológico, ajudando o organismo a defender-se de vírus e bactérias. </p>
-            </div>
-            <div id="saude" data-anime="left">
-                <p>Auxilia no controle da ansiedade aumentando a produção de hormônios que dão a sensação de bem-estar.</p>
-            </div>
+                <div id="saude">
+                    <p>Ajuda na prevenção de doenças crônicas como obesidade, colesterol alto, diabetes e doenças
+                        cardíacas.</p>
+                </div>
+                <div id="saude" data-anime="right">
+                    <p>Estimula o sistema imunológico, ajudando o organismo a defender-se de vírus e bactérias. </p>
+                </div>
+                <div id="saude" data-anime="left">
+                    <p>Auxilia no controle da ansiedade aumentando a produção de hormônios que dão a sensação de
+                        bem-estar.</p>
+                </div>
     </article>
 <!--pagina quem somos-->
     <article id="sobre-nos">
@@ -204,16 +213,21 @@
             <div id="logo-footer">
                 <img id="gobike" src="/static/images/gobike2.png" alt="Gobike">
             </div>
-                <div id="redesSocias">
-                    <p id="copyright">© 2019 Gobike Ltda | Todos os Direitos Reservados</p>  
-                        <div id="icons">
-                            <div class="image"><a href=""><img src="/static/images/redes-sociais/facebook.png" alt="face"></a></div>
-                            <div class="image"><a href=""><img src="/static/images/redes-sociais/twitter.png" alt="twitter"></a></div>
-                            <div class="image"><a href=""><img src="/static/images/redes-sociais/instagram.png" alt="instagram"></a></div>
-                            <div class="image"><a href=""><img src="/static/images/redes-sociais/youtube.png" alt="youtube"></a></div>
-                            <div class="image"><a href=""><img src="/static/images/redes-sociais/linkedin.png" alt="linkedin"></a></div>
-                        </div>
+            <div id="redesSocias">
+                <p id="copyright">© 2019 Gobike Ltda | Todos os Direitos Reservados</p>
+                <div id="icons">
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/facebook.png" alt="face"></a>
+                    </div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/twitter.png" alt="twitter"></a>
+                    </div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/instagram.png"
+                                alt="instagram"></a></div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/youtube.png" alt="youtube"></a>
+                    </div>
+                    <div class="image"><a href=""><img src="/static/images/redes-sociais/linkedin.png"
+                                alt="linkedin"></a></div>
                 </div>
+            </div>
             <div id="links">
                 <a href="/notFound">Termos e Privacidade</a>
                 <a href="/contato">Contato</a>
@@ -222,4 +236,5 @@
         </div>
     </footer>
 </body>
+
 </html>
