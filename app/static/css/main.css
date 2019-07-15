@@ -79,20 +79,6 @@ li div p{
     padding: 0;
 }
 
-/**********Mensagem de alerta login***************/
-.mensagens {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: rgba(9, 184, 111, 0.651);
-    font-size: 14pt;
-}
-.mensagens .alert {
-    text-align: center;
-}
-
 
 /**************** rodapé ****************/
 footer{		

@@ -1,0 +1,80 @@
+/* pagina Quem somos */
+article{
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    height: 100%;
+    /* background-color:black; */
+    background-size: 100%;
+}
+
+.descricao{
+    text-align: center;
+    padding: 14px;
+}
+
+.circle{
+    overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.circle img{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.quemSomos{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.a-equipe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 1px;
+    width: 90%;
+}
+
+.sobreNos{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+    padding: 0px;
+}
+
+.descricaosobre{
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 24px;
+}
+
+#principalSobre{
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    
+}
+/* fim da pagina Quem somos*/

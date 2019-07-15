@@ -17,7 +17,7 @@
     <title>Gobike</title>
 </head>
 
-<body>
+<body body onLoad="slide1()">
     <header class="header">
         <div id="nav-secundaria">
             <ul>{% if user.is_authenticated == False %}
@@ -40,6 +40,9 @@
                             <a href="/../rotas/usuario" id="logout"><button id="btn-login">Minha Conta</button></a>
                         </div>
                     </li>
+                    </li>
+                        <p>   </p>
+                    <li>
                     <li>
                         <div id="btn-tamanho">
                             <a href="accounts/logout" id="logout"><button id="btn-login">Sair</button></a>
@@ -62,10 +65,10 @@
                         <div id="tamanho"><a href="#dicas-seguranca" id="seguranca">Dicas de Segurança</a></div>
                     </li>
                     <li>
-                        <div id="tamanho"><a href="#" id="saude">Dicas de Saúde</a></div>
+                        <div id="tamanho"><a href="#dicas-saude" id="saude">Dicas de Saúde</a></div>
                     </li>
                     <li>
-                        <div id="tamanho"><a href="#" id="sobre">Sobre nós</a></div>
+                        <div id="tamanho"><a href="/sobre" id="sobre">Sobre nós</a></div>
                     </li>
                     <li>
                         <div id="tamanho"><a href="/contato" id="contato">Contato</a></div>
@@ -195,31 +198,6 @@
                     <p>Auxilia no controle da ansiedade aumentando a produção de hormônios que dão a sensação de
                         bem-estar.</p>
                 </div>
-    </article>
-<!--pagina quem somos-->
-    <article id="sobre-nos">
-        <div>
-            <h4 class="titulo">Quem Somos</h4>
-        </div>
-        <div class="a-equipe">     
-            <div class="pessoa">
-                <img class="circle" src="../static/images/sobre/sobre2.png">
-                <h4>Barbara Cardoso</h4>
-                <h5>25 anos</h5>
-                <p>
-                    Formada em técnico de informática e estudante de Engenharia de Computação.
-                </p>
-            </div>
-            <div class="pessoa">
-                <img class="circle" src="../static/images/sobre/sobre1.png">
-                <h4>Claudia Yapuchura</h4>
-                <h5>24 anos</h5>
-                <div class="txt">
-                    <p>
-                        Estudante de Tecnologia em Automação Industrial.
-                    </p>
-                </div>
-            </div>
     </article>
     <footer>
         <div id="links-footer">

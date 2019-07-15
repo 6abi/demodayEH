@@ -1,16 +1,16 @@
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
     padding: 0;
-    display: grid;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 .header{
     display: flex;
     flex-direction: column;
     background: url('/static/images/img_bg_1.jpg') no-repeat;
     background-size: cover;
-    min-height: 850px;
-    max-height: 900px;
+    min-height: 800px;
+    
 }
 section,
 div{
@@ -55,7 +55,7 @@ div{
     background-color: rgb(255, 255, 255);
     transition: all 0.3s ease 0s;
     padding: 20px 20px;
-    font-size: 14px;
+    font-size: 12px;
     color: #52d3aa;
     font-weight: bold;
     letter-spacing: 2px;
@@ -68,14 +68,14 @@ div{
 #nav-secundaria p{
     padding: 0px 10px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* barra de navegação */
 .header #nav-principal{
     width: 100%;
     top: 0;
-    min-height: 70px;
+    min-height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -83,8 +83,8 @@ div{
 .header .menu-fixo{
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.87);
-    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
 }
 .nav-bar{
     display: block;
@@ -108,7 +108,7 @@ div{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    width: 200px;
     min-height: 70px;
 }
 .nav-bar #tamanho li{
@@ -120,7 +120,7 @@ div{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 .nav-bar li #tamanho a:hover{
@@ -128,22 +128,6 @@ div{
     cursor: pointer;
 }
 
-/* submenu dicas */
-.sub-menu  ul{
-    display: none;
-    margin-top: 70px; 
-}
-.nav-bar .sub-menu:hover ul{
-    display: block;
-    text-align: center;
-}
-.sub-menu ul{
-    position: absolute;
-    padding: 0px;
-    background-color: rgba(73, 73, 107, 0.2),;
-    border: none;
-    border-radius: 10px;
-}
 
 /* animação titulo inicial*/
 #tituloInicial{
@@ -296,75 +280,6 @@ span:before{
 }
 /* fim da pagina dicas de saude*/
 
-/* pagina Quem somos */
-.descricao{
-    text-align: center;
-    padding: 14px;
-}
-
-.circle{
-    overflow: hidden;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    position: relative;
-}
-
-.circle img{
-    position: absolute;
-    width: 200px;
-    bottom: 0;
-}
-
-.titulo{
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Baloo Bhai', cursive;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
-
-.quemSomos{
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-.a-equipe{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    margin-top: 1px;
-    width: 90%;
-}
-
-.sobreNos{
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2px;
-    padding: 60px;
-}
-
-.descricaosobre{
-    padding-left: 45px;
-    padding-right: 45px;
-    font-size: 24px;
-}
-
-#principalSobre{
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-}
-/* fim da pagina Quem somos*/
 footer{		
     display: flex;	
     flex-direction: column;	

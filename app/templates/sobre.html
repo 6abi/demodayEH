@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block title %}Cadastrar no Gobike{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+<script src="{% static 'js/script.js' %}" defer></script>
+<!--pagina quem somos-->
+<article id="sobre-nos">
+    <div>
+        <h4 class="titulo">Quem Somos</h4>
+    </div>
+    <div class="a-equipe">
+        <div class="pessoa">
+            <img class="circle" src="../static/images/sobre/sobre2.png">
+            <h4>Barbara Cardoso</h4>
+            <h5>25 anos</h5>
+            <p>
+                Formada em técnico de informática e estudante de Engenharia da Computação.
+            </p>
+        </div>
+        <div class="pessoa">
+            <img class="circle" src="../static/images/sobre/sobre1.png">
+            <h4>Claudia Yapuchura</h4>
+            <h5>24 anos</h5>
+            <div class="txt">
+                <p>
+                    Estudante de Tecnologia em Automação Industrial.
+                </p>
+            </div>
+        </div>
+</article>
+{% endblock %}

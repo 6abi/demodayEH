@@ -37,6 +37,20 @@ if(target2.length){
     })
 }
 
+// function slide1(){
+//     document.getElementById('header').src="/images/banner/img4";
+//     setTimeout("slide2()", 2000)
+// }
+      
+// function slide2(){
+//     document.getElementById('header').src="/images/banner/img5.jpg";
+//     setTimeout("slide3()", 2000)
+// }
+      
+// function slide3(){
+//     document.getElementById('header').src="/images/banner/img6.jpg";
+//     setTimeout("slide1()", 2000)
+// }
 
 
 

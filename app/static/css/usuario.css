@@ -1,274 +1,141 @@
-* {
-    margin: 0;
-}
-
-body {
-    margin: 0;
+section {    
     background-color: #2d2f33;
-}
-
-/* Section com Texto do Usuário e Localização*/
-
-section{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-   
-    height: 50vh;
-}
-
-section div:nth-child(1){
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-section div:nth-child(1) h3{
-    margin: 0 0 5px 0;  
-    font-size: 25pt;
-}
-
-section div:nth-child(1) p{
-    margin:0;
-    font-size:12pt;
-    width: 82%;
-}
-
-section div:nth-child(2){
-    width: 59%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-section div:nth-child(2) span:nth-child(1) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
-    height: 100%;
-}
-section div:nth-child(2) span:nth-child(1) i{
-    font-size: 55px;
-    color: #ee3f60;
-}
-
-section div:nth-child(2) div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-}
-
-section div:nth-child(2) span h3{
-    margin:0;
-    font-size: 20pt;
-}
-
-
-.conteudo span i {
-    font-size: 65pt;
-    padding: 0px;
-    color: azure;
-}
-
-/* Fim da Section*/
-/* ASIDE - Conteudo Principal com DIV das rotas*/
-
-article {   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; 
-}
-
-.conteudo{
-    width: 60vw;
-    height: 60vh;
-    background-color: #b9b6b675;
-    margin:5px;
-    border-radius: 20px;
-    display: flex;   
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
-    font-family: 'Raleway';
-}
-
-img {
-    width: 110px;
-}
-
-article .conteudo h3{
-    margin:2px 0 2px 0;
-}
-
-article .conteudo p{
-    margin: 0;
-}
-
-button{
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    color:white;
-    background-color: #ee3f60;
-    font-family: 'Raleway';
-}
-
-/* Fim ASIDE*/
-/* MAPA */
-.popup{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    height: 100%;
+    height: 90vh;
     width: 100%;
 }
 
-#location-map{
-    position: relative;
-    background-color: white;
-    margin-top: 5vh;
-    border: none;
+#dashDados{
+    height: 80%;
+    width: 40%;
+    background-color: #57585b;
     border-radius: 20px;
-    height: 80vh;
-    width: 50vw;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    margin: 2% 0%;
+} 
+
+#dashDados h3{
+    font-size: 20pt;
+    margin-left: 20px;
+}
+
+
+#dashDados h4{
+    font-size: 18pt;
+    margin-left: 20px;
+    width: 80%;
+    color:#52d3aa
+}
+
+#dashDados p{
+    margin-left: 20px;
+}
+
+#dashDados ul li{
+    list-style-type: none;
+}
+
+#dashLocalizacao{
+    height: 80%;
+    width: 40%;  
+    background-color: #57585b;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    color:white;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.mapa{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+#dashLocalizacao img{
+    width: 70px;
 }
-/* FIM MAPA */
+
+#dashLocalizacao article h3{
+    font-size: 20pt;
+}
+
+#dashLocalizacao article p{
+    font-size: 14pt;
+    text-align: center;
+}
 
 /* Tamanho Tablet */
 @media(max-width:768px){ 
-    .conteudo{
-        width: 90vw;
-        height: 60vh;     
-    }
-}
-
-@media(max-width:545px){
-    
-    body {
-        grid-template-rows: 40vh 90vh 450vh;
-    }
-     
-    section{
-        flex-direction: column;        
-        height: 70vh;
-    }
-    
-    section div:nth-child(1){
-        height: 50%;
-    }
-    
-    section div:nth-child(1) p{
-        width: 100%;
-    }
-    
-    section span:nth-child(2){
-        height: 30%;
-    }
-    
-    .conteudo{
-        width: 90vw;
-        height: 60vh;     
+    #dashDados, #dashLocalizacao{
+        height: 46%;
+        width: 80%;  
     }
 
-    .conteudo p{
-        font-size: 10pt;
+    #dashDados h2{
+        display: none;
     }
-    
-    #nav-logado div img {
-        width: 74px;
-        margin-left: 0px;
+
+    #dashDados h3{
+        font-size: 12pt;
+        margin: 0px 0px 0px 20px;
     }
-    
-    #nav-logado {
-        flex-direction: column;
-        height: 30vh;
-    }
-    
-    #nav-logado ul {
-        margin: 0px;
-        padding: 0px;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    
-    aside {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    
-    .popup{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    
-    #location-map{
-        width: 100%;
-        border-radius: none;
-    }    
-    
-    #localizacao {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #localizacao h3 {
-        font-size: 16pt;
-    }
-    
-    span {
-        padding: 0px;
-        font-size: 45pt;
-    }
-    
-    p {
+
+    #dashDados h4{
         font-size: 12pt;
     }
-}
+  
+    #dashDados p{
+        margin: 8px 0 8px 20px;
+    }
 
+    #dashDados ul{
+        font-size: 10pt;
+        margin-top:2px;
+        padding-left: 20px;
+    }
+
+    #dashDados ul li{
+        font-size: 10pt;
+    }
+
+    #dashLocalizacao img{
+        width: 55px;
+    }
+
+    section{
+        flex-direction: column;
+    }
+}
 
 /* Tamanho Smartphone */
 @media(max-width:425px){
-    section div:nth-child(1){
+    #dashDados h4{
+        text-align: center;
+        margin: 10px 0 0 0;
         width: 100%;
     }
 
-    section div:nth-child(2) {
+    #dashDados p{
+        text-align: center;
+        margin: 8px 0 8px 0px;
+        font-size: 80%;
         width: 100%;
     }
 
-    section div:nth-child(2) span{
-        width: 100%;
+    #dashLocalizacao img{
+        width: 40px;
     }
 
-    section div:nth-child(2) span h3{
-        font-size: 16pt;
+    #dashLocalizacao article h3{
+        font-size: 14pt;
+        width: 100%;
+        margin: 8px 0 4px 0; 
+        text-align: center;
+    }
+
+    #dashLocalizacao article p{
+        font-size:12pt;
+        margin: 8px 0 4px 0; 
     }
 }

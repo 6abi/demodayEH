@@ -4,24 +4,22 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/usuario.css' %}">
 <script src="{% static 'js/usuario.js' %}" defer></script>
-
 <section>
-    <div>
-        <h3>Olá, {{username}} Bem vindo(a)!</h3>
-        <p>Pronto para registrar o seu primeiro rolê de bike?</p>
-        <p>Vamos começar!</p>            
-    </div>
-    <div>                
-        <span>
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Sua localização agora:</h3>
-            <p>Estação Hack - Trianon Masp</p>
-        </span>
-    </div>
+        <div id="dashDados">
+                <h4>Olá, {{ user.get_username}}, bem vindo(a)!</h4>
+                <h3>Dados Pessoais </h3>
+                <p>Nome Completo: {{ user.get_full_name }}</p>   
+                <p>Nome de Usuario: {{ user.get_username }}</p> 
+                <p>Nome : {{ nome }}</p> 
+        </div>
+        <div id="dashLocalizacao">
+                <img src="/static/images/sugestoes/place.png" alt="">
+                <article>
+                        <h3>Sua localização agora:</h3>
+                        <p>Estação Hack - Trianon Masp</p>
+                </article>
+        </div>
 </section>
-<article>                  
-    <div class='conteudo'>      
-        <span><i class="fas fa-map-marked-alt"></i></span>
-    </div>                                          
-</article>
+            
+
 {% endblock %}
