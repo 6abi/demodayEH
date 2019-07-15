@@ -27,3 +27,7 @@ def mostrar_sobre(request):
 @login_required
 def mostrar_usuario(request):
     return render(request, 'rotas/usuario.html')
+
+@login_required
+def mostrar_mapa(request):
+    return render(request,'maps.html' )

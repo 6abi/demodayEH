@@ -20,7 +20,7 @@ div{
 #apresentarInicio{
     margin: 0;
     display: flex;
-    color: rgb(24, 95, 161);
+    color: white;
     font-family: 'Crete Round', serif;
     font-size: 45px;
     justify-content: center;
@@ -91,10 +91,10 @@ div{
     /* background: black; */
     /* border-bottom: solid white 1px; */
 }
-/* .nav-bar #logo  img{
+.nav-bar #logo  img{
     width: 100px;
     height: 100px;
-} */
+}
 .nav-bar ul{
     display: flex;
     justify-content: space-around;

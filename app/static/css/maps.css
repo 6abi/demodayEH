@@ -1,0 +1,50 @@
+section {    
+    background-color: #52d3aa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    width: 100%;
+
+}
+
+#dashDados{
+    height: 80%;
+    width: 40%;
+    background-color: #52d3aa;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    margin: 2% 0%;
+}
+h4{
+    font-size: 18px;
+}
+la
+
+label p{
+    color: white;
+}
+input{
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    width: 350px;
+    margin: 5px 5px;
+}
+
+article{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+}
+form{
+    height: 100%;
+}
+#mapa{
+    margin-bottom: 20px;
+}
+
