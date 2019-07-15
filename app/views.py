@@ -21,5 +21,6 @@ def mostrar_contato(request):
         data['conteudo'] = request.POST.get('conteudo', 'conteudo not found')
     return render(request, 'contato.html', data)
 
+@login_required
 def mostrar_usuario(request):
     return render(request, 'rotas/usuario.html')
