@@ -31,6 +31,15 @@
             </ul>
         </div>
     </nav>
+    <div class="mensagens">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
     {% block content %}
     {% endblock %}
     <footer>

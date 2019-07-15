@@ -1,8 +1,11 @@
 {% extends 'main.html' %}
+{% load crispy_forms_tags %}
 {% load staticfiles %}
 {% block title %}Cadastrar no Gobike{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/register.css' %}">
+<script src="{% static 'js/register.js' %}" defer></script>
+
 
 <section>
     <div id="form">
@@ -10,11 +13,25 @@
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ next }}">
             <img src="/static/images/gobike.png" alt="">
-            {{ form }}
+            <label for="id_username">Usuário:</label>
+            <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username">
+            <label for="id_email">Email:</label>
+            <input type="email" name="email" required="" id="id_email">
+            <label for="id_password1">Senha:</label>
+            <input type="password" name="password1" required="" id="id_password1">
+            <label for="id_password2">Confirmação de senha:</label>
+            <input type="password" name="password2" required="" id="id_password2">
+            <label for="id_first_name">Nome:</label>
+            <input type="text" name="first_name" required="" id="id_first_name">
+            <label for="id_last_name">Sobrenome:</label>
+            <input type="text" name="last_name" required="" id="id_last_name">
+            <!-- <label for="id_birthday">Data de Nascimento:</label>
+            <input type="text" name="birthday" required id="id_birthday">
 
+         -->
             <button type="submit">{% csrf_token %}Cadastrar</button>
             <div id="login">
-                <p>Já tem uma conta?</p><a href="/../accounts/login">Entrar</a>
+                <p>Já tem uma conta? <a href="/../accounts/login">Entrar</a></p>
             </div>
         </form>
     </div>
