@@ -20,3 +20,6 @@ def mostrar_contato(request):
         data['telefone'] = request.POST.get('telefone', 'telefone not found')
         data['conteudo'] = request.POST.get('conteudo', 'conteudo not found')
     return render(request, 'contato.html', data)
+
+def mostrar_usuario(request):
+    return render(request, 'rotas/usuario.html')

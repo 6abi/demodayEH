@@ -20,19 +20,27 @@
 <body>
     <header class="header">
         <div id="nav-secundaria">
-            <ul>
-                <li>
-                    <div id="btn-tamanho">
+            <ul>{% if user.is_authenticated == False %}
+                    <li>
+                        <div id="btn-tamanho">
 
-                        <a href="accounts/login" id="entrar"><button id="btn-login">Entrar</button></a>
-                    </div>
-                </li>
-                <p> ou </p>
-                <li>
-                    <div id="btn-tamanho">
-                        <a href="accounts/register" id="cadastrese"><button id="btn-login">Cadastre-se</button></a>
-                    </div>
-                </li>
+                            <a href="accounts/login" id="entrar"><button id="btn-login">Entrar</button></a>
+                        </div>
+                    </li>
+                    <p> ou </p>
+                    <li>
+                        <div id="btn-tamanho">
+                            <a href="accounts/register" id="cadastrese"><button id="btn-login">Cadastre-se</button></a>
+                        </div>
+                    </li>
+                    
+                {% else %}
+                    <li>
+                        <div id="btn-tamanho">
+                            <a href="accounts/logout" id="logout"><button id="btn-login">Sair</button></a>
+                        </div>
+                    </li>
+                {% endif %}
             </ul>
         </div>
         <div id="nav-principal">

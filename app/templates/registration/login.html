@@ -7,15 +7,12 @@
 <section>
     <form method="post">
         {% csrf_token %}
-        <input type="hidden" name="csrfmiddlewaretoken"
-            value="GcZnJM2Rn8Btwf17cx1mRMtH40x9CRvvX4AokraKIpAOPVvwotLS4gvf9FUrNYzv">
+        <input type="hidden" name="next"
+            value="{{ next }}">
 
         <img src="/static/images/gobike.png" alt="">
-        <label for="username">Usuário:</label>
-        <input type="username" name="username" autofocus required id="username">
-
-        <label for="password">Senha:</label>
-        <input type="password" name="password" required id="password">
+        
+        {{form}}
         <button type="submit">{% csrf_token %}Entrar</button>
         <div>
             <a href="/">Voltar</a>
