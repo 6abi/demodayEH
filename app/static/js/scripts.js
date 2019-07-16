@@ -51,6 +51,3 @@ if(target2.length){
 //     document.getElementById('header').src="/images/banner/img6.jpg";
 //     setTimeout("slide1()", 2000)
 // }
-
-
-

@@ -4,22 +4,20 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/usuario.css' %}">
 <script src="{% static 'js/usuario.js' %}" defer></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true&key=AIzaSyAEbdO-bfZx8mN17QlGlqTizqXLAbFJfDE" defer></script>
+
 <section>
         <div id="dashDados">
                 <h4>Olá, {{ user.get_username}}, bem vindo(a)!</h4>
                 <h3>Dados Pessoais </h3>
-                <p>Nome Completo: {{ user.get_full_name }}</p>   
-                <p>Nome de Usuario: {{ user.get_username }}</p> 
-                <p>Nome : {{ nome }}</p> 
+                <p>Nome Completo: {{ user.get_full_name }}</p>
+                <p>Nome de Usuario: {{ user.get_username }}</p>
         </div>
         <div id="dashLocalizacao">
-                <img src="/static/images/sugestoes/place.png" alt="">
-                <article>
-                        <h3>Sua localização agora:</h3>
-                        <p>Estação Hack - Trianon Masp</p>
-                </article>
+                <p>Sua localização agora:</p>
+                <div id="map"></div>
         </div>
 </section>
-            
+
 
 {% endblock %}

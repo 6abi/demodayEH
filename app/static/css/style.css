@@ -36,7 +36,9 @@ div{
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    margin: 0px 40px;
+    margin: 0px 0x;
+    padding-right: 40px;
+    padding-top: 1%;
 }
 #nav-secundaria ul{
     display: flex;
@@ -75,7 +77,6 @@ div{
 .header #nav-principal{
     width: 100%;
     top: 0;
-    min-height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,7 +93,7 @@ div{
     /* border-bottom: solid white 1px; */
 }
 .nav-bar #logo  img{
-    width: 100px;
+    width: 140px;
     height: 100px;
 }
 .nav-bar ul{
