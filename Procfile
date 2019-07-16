@@ -1,1 +1,1 @@
-web: gunicorn gobike-projeto.wsgi
+web: gunicorn gobike-rh.wsgi
